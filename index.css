@@ -157,6 +157,7 @@ header{
 }
 
 .lanuages{
+    margin-left: 35px;
     grid-area: lanuages;
 }
 
@@ -172,7 +173,7 @@ header{
     padding: 6px 10px;
 }
 .skills{
-    margin-top: 60px;
+    margin-top: 200px;
     grid-area: skills;
 }
 
@@ -236,21 +237,21 @@ p{
 
 @media screen and (min-width: 1300px) {
     .skills {
-        margin-top: 90px;
+        margin-top: 200px;
     }
 
 }
 
 @media screen and (min-width: 1378px) {
     .skills {
-        margin-top: 110px;
+        margin-top: 220px;
     }
 
 }
 
 @media screen and (min-width: 1508px) {
     .skills {
-        margin-top: 140px;
+        margin-top: 200px;
     }
     .edciton{
         width: 23%;
