@@ -1,0 +1,258 @@
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    /* font-family: proxima-nova, Proxima Nova, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header{
+    margin: 20px 0 15px 0;
+    grid-area: header;
+    /* height: 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header_title{
+    padding: 30px 152px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #42677f;
+    position: relative;
+    border: 1px double #42677f;
+}
+.header_title::after{
+    content: '';
+    padding: 10px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -11px;
+    left: -11px;
+    border: 1px double #42677f;
+}
+
+.bodyContainer{
+    /* font-family: proxima-nova, Proxima Nova, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    color: #1c1a1a;
+    margin: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        'profile header header edciton'
+        'profile details details edciton'
+        'profile experience experience edciton'
+        'idf experience experience skills '
+        'idf experience experience skills '
+        'idf lanuages lanuages  skills'
+    ;
+    grid-template-rows: auto auto auto auto 250px ;
+}
+
+._title{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+    background: #2e323905;
+}
+.subCon{
+    display: flex;
+}
+.con{
+    margin: 0 20px;
+}
+
+.details{
+    font-family: 'Montserrat', sans-serif !important;
+    grid-area: details;
+    font-size: 16px;
+    display: flex;
+    color: #4f4f79;
+    font-weight: 100 !important;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.det_text{
+    margin: 13px 10px;
+}
+.det_text:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    margin-left: -10px;
+    margin-top: 1px;
+    border-left: 0.095rem solid black;
+}
+.det_text:nth-child(2)::after{
+    content: '';
+    position: absolute;
+    height: 15px;
+    margin-left: 10px;
+    margin-top: 1px;
+    border-right: 0.095rem solid black;
+}
+
+.det_row{
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.det_row2{
+    margin-bottom: 30px;
+}
+.p{
+    margin:0;
+}
+.profile{
+    margin-bottom: 0;
+    grid-area: profile;
+}
+.profile1{
+    margin-bottom: 40px;
+    grid-area: profile1;
+}
+
+.idf{
+    margin-top: 15px;
+    grid-area: idf;
+}
+.ediction,
+.row2{
+    padding: 5px 0 10px;
+    margin-top: 10px;
+}
+.row2_title{
+    color: #4f4f79;
+    font-weight: 700;
+}
+.edc_row2{
+    font-weight: 400 !important;
+}
+.edciton{
+    grid-area: edciton;
+    position: absolute;
+    right: 0;
+    width: 22%;
+}
+.time{
+    font-weight: 500;
+    margin: 15px 0 6px;
+}
+.text{
+    margin-left: 5px;
+}
+.subCon{
+    display: flex;
+    flex-direction: column;
+}
+
+.lanuages{
+    grid-area: lanuages;
+}
+
+.experience{
+    position: absolute;
+    width: 45%;
+    top: 23%;
+    left: 26%;
+    grid-area: experience;
+}
+.row1_skills{
+    box-shadow: 0px 2px 7px -1px #898989;
+    padding: 6px 10px;
+}
+.skills{
+    margin-top: 60px;
+    grid-area: skills;
+}
+
+.skill_container{
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.skill_rate{
+    width: 70%;
+    border: 1px solid black;
+}
+
+.filler_c{
+    background: #4f4f79;
+    height: 100%;
+    width: 50%;
+}
+.filler_c1{
+    background: #4f4f79;
+    padding-top: 1px;
+    height: 100%;
+    width: 55%;
+}
+.filler_100{
+    background: #4f4f79;
+    padding-top: 1px;
+    height: 100%;
+    width: 100%;
+}
+.filler_85{
+    background: #4f4f79;
+    padding-top: 1px;
+    height: 100%;
+    width: 85%;
+}
+.filler_90{
+    background: #4f4f79;
+    padding-top: 1px;
+    height: 100%;
+    width: 90%;
+}
+.filler_95{
+    background: #4f4f79;
+    padding-top: 1px;
+    height: 100%;
+    width: 95%;
+}
+
+.skill_title_row2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #4f4f79;
+    font-weight: 600;
+}
+p{
+    margin: 0;
+}
+
+
+
+@media screen and (min-width: 1300px) {
+    .skills {
+        margin-top: 90px;
+    }
+
+}
+
+@media screen and (min-width: 1378px) {
+    .skills {
+        margin-top: 110px;
+    }
+
+}
+
+@media screen and (min-width: 1508px) {
+    .skills {
+        margin-top: 140px;
+    }
+    .edciton{
+        width: 23%;
+    }
+}
